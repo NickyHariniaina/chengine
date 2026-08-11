@@ -1,7 +1,9 @@
-#include <stdio.h>
+#include "include/board.h"
 #include <stdlib.h>
 
 int main(void) {
-  printf("Hello World!\n");
+  Board board;
+  parse_fen(START_FEN, &board);
+  print_board(&board);
   return EXIT_SUCCESS;
 }
