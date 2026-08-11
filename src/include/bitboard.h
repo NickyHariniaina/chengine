@@ -17,6 +17,6 @@
 
 int count_bits(bitboard_size board);
 int pop_least_significant_bit(bitboard_size *board);
-void print_board(bitboard_size board);
+void print_bitboard(bitboard_size board);
 
 #endif

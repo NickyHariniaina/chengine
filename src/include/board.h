@@ -14,9 +14,13 @@ typedef struct {
 
 #define START_FEN "rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 
-#define WHITE_KING 0x1
-#define WHITE_QUEEN 0x2
-#define WHITE_ROOK 0x4
-#define WHITE_KNIGHT 0x8
+#define CASTLE_W_QUEEN 0b00000001
+#define CASTLE_B_QUEEN 0b00000010
+#define CASTLE_B_KING 0b00000100
+#define CASTLE_W_KING 0b00001000
+
+void reset_board(Board *board);
+void parse_fen(const char *fen, Board *b);
+void print_board(Board *board);
 
 #endif
