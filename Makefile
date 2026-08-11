@@ -7,7 +7,7 @@ initiate:
 	mkdir -p $(OUTPUT_FOLDER)
 
 compile:
-	gcc -o $(OUTPUT_FOLDER)main $(FILE_TO_COMPILE)
+	gcc -o $(OUTPUT_FOLDER)main $(FILE_TO_COMPILE) -Wextra -Wall
 
 clean:
 	rm -rf $(OUTPUT_FOLDER)
