@@ -1,7 +1,7 @@
 #ifndef TYPES_H
 #define TYPES_H
 
-#include <cstdint>
+#include <stdint.h>
 
 typedef enum { WHITE, BLACK } Color;
 
